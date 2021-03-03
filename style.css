@@ -1,0 +1,371 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+}
+
+/* Navigation */
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background: #3c3c39;
+    position: relative; 
+    border-bottom: 2px solid #F2A900;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+}
+
+nav ul li a{
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; 
+}
+
+a:hover{
+    color: #F2A900;
+}
+
+/* Logo */
+
+.logo{
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.logo img{
+    height: 80px;
+    margin: 5px 35px;
+}
+
+/* header */
+.header{
+    width: 100%;
+    height: 500px;
+    background: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+} 
+
+.img-responsive{
+    width: 100%;
+    height: 100%;
+}
+
+/* Section contenu*/
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0;
+    background-image: linear-gradient(to right, #444343, #F2A900 );
+    background-clip: text;
+    color: transparent;
+}
+
+.TxtImg{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 1px dashed #F2A900;
+}
+
+.flexcontainerSection1{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.containerImg{
+    width: 45%;
+    margin: 20px;
+
+}
+
+.containerImg img{
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.containerTxt{
+    width: 45%;
+    background: azure;
+    margin: 20px;
+    border-radius: 2px;
+}
+
+h2.sousTitre{
+    text-align: center;
+    font-size: 35px;
+    padding: 15px 0;
+    color: #616060;
+}
+
+hr{
+    width: 60px;
+    margin: 0 224px;
+    opacity: 0.6;
+}
+
+.txtSec1{
+    font-size: 1.7em;
+    padding: 20px;
+    margin: 10px;
+    line-height: 1.7em;
+    letter-spacing: 0.5px;
+}
+
+
+/* Media Secrion contenu */
+
+@media screen and (max-width: 1200px){
+
+    .TxtImg .flexcontainerSection1{
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+   
+    }
+
+    .containerImg{
+        width: 100%;
+    }
+
+    .containerTxt{
+        width: 100%;
+    }
+
+    hr{
+        margin: 0 150px;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    h1{
+        font-size: 25px;
+    }
+
+    nav{
+        position: absolute;
+        right: 0px;
+    }
+    
+    .logo img{
+        height: 40px;
+        margin: 22px 35px;
+    }
+
+}
+
+/*  Fin Media contenu */
+
+
+/* Section Formulaire */
+
+.titreForm{
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+}
+
+
+.formulaire{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 60%;
+}
+
+.row{
+    width: 100%;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea{
+    height: 150px;
+}
+
+label{
+    font-size: 14px;
+}
+
+.subBtn{
+    width: 30%;
+    margin: 40px auto;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.subBtn:hover {
+    background: #F2A900;
+}
+
+
+.row:nth-child(2), .row:nth-child(3){
+    margin-top: 30px;
+}
+
+/*Footer*/
+#footer{
+    width: 100%;
+    height: 60px;
+    background: #3c3c39;
+    border-top: 2px solid #F2A900;
+    display: flex;
+    justify-content: center;
+}
+
+p.txtFooter{
+    color: white;
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+
+
+.active{
+    color: #F2A900;
+}
+
+
+
+/* Page Evénement */
+
+.TxtImg{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 1px dashed #F2A900;
+}
+
+.flexcontainerSection2{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+h2.sousTitre{
+    text-align: center;
+    font-size: 35px;
+    padding: 15px 0;
+    color: #616060;
+}
+
+.adress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+.txtSec2{
+    font-size: 1.7em;
+    padding: 20px;
+    margin: 10px;
+    line-height: 1.7em;
+    letter-spacing: 0.5px;
+}
+
+.containerImg2{
+    width: 45%;
+    margin: 20px;
+}
+
+.containerImg2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.containerTxt2{
+    width: 45%;
+    background: azure;
+    margin: 20px;
+    border-radius: 2px;
+
+}
+
+
+/* Media query evenement */
+
+@media screen and (max-width: 1200px){
+
+    .TxtImg .flexcontainerSection2{
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+   
+    }
+
+    .containerImg2{
+        width: 100%;
+    }
+
+    .containerTxt2{
+        width: 100%;
+    }
+
+    hr{
+        margin: 0 150px;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    h1{
+        font-size: 25px;
+    }
+
+    nav{
+        position: absolute;
+        right: 0px;
+    }
+    
+    .logo img{
+        height: 40px;
+        margin: 22px 35px;
+    }
+
+}
+
+
